@@ -42,21 +42,25 @@ public class Aluno {
     }
     
     // métodos específicos
-    public float calcularMedia(float n1,float n2,float n3){
+    public void calcularMedia(float n1,float n2,float n3){
         float mediaCalculada = (( n1 + n2 + n3 ) / 3);
-        return mediaCalculada;
+        // salva média
+        setMedia(mediaCalculada);
     }
     
-    public String avaliarDesempenho (float media){
+    public void avaliarDesempenho (float media){
+        String avaliacao;
         if(media <= 6.0 ){
-            return "Reprovado...";
+           avaliacao = "Reprovado...";
         } else if(media >= 6.0 && media <= 9.0){
-            return "Aprovado!";
+            avaliacao = "Aprovado!";
         } else if(media > 9.0){
-            return "Ótimo desempenho!";
+            avaliacao = "Ótimo desempenho!";
         } else {
-            return "Nota inválida...";
+            avaliacao = "Nota inválida...";
         }
+        // salva desempenho
+        setDesempenho(avaliacao);
     }
     
 }

@@ -8,6 +8,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>17</maven.compiler.release>
-        <exec.mainClass>com.fatec.atv2.notas.Atv2Notas</exec.mainClass>
+        <exec.mainClass>com.fatec.atv2.notas.Main</exec.mainClass>
     </properties>
 </project>
